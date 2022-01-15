@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: flexipleapp_production
-  username: flexipleapp
-  password: <%= ENV["FLEXIPLEAPP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+#   database: flexipleapp_production
+#   username: flexipleapp
+#   password: <%= ENV["FLEXIPLEAPP_DATABASE_PASSWORD"] %>
